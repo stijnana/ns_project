@@ -1,0 +1,14 @@
+{
+  "name": "ns_app",
+  "version": "1.0.0",
+  "description": "A ns APP",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stijn Olthof, Robin Wist",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
