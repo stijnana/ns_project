@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- ng-app is een 'directive'. Directives vertellen Angular dat je een bepaald gedrag wilt toevoegen
+ met ng-app vertellen we welke 'app' dit is en zo koppelen we alle instellingen van md2App
+ -->
+<html ng-app="md2App">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+    <title>Voorbeeld Mediacollege</title>
+    <link rel="stylesheet" href="style/css/default.css">
+</head>
+<body>
+<!-- met de ng-controller directive koppelen we een container aan een controller
+met een controller geven we de 'view' toegang tot de 'model'
+-->
+<div ng-controller="StudentsController as students">
+
+    <div ng-if="students.currentStudent">
+        <div>De geselecteerde student is: {{students.currentStudent.name}}</div>
+        <div>Zijn/haar leeftijd is: {{students.currentStudent.age}}</div>
+    </div>
+
+    <input type="text" ng-model="students.searchQuery">
+
+    <div>Er zijn {{students.allStudents.length}} studenten in deze array</div>
+    <div ng-click="students.setCurrentStudent(currentStudent)" ng-repeat="currentStudent in students.allStudents | filter:students.searchQuery">
+        {{currentStudent.name}}
+    </div>
+
+</div>
+
+<script src="node_modules/angular/angular.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers/students.controller.js"></script>
+</body>
+</html>
