@@ -27,7 +27,7 @@
                 });
 
             vm.newStudent = {};
-        }
+        };
 
         vm.allStudents = [
             {name:"Anton", age:18},
