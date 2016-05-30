@@ -3,9 +3,12 @@
 
     /* App Module */
     angular.module('md2App', [
-        'controllers'
+        'controllers',
+        'ngAnimate'
     ]);
 
     angular.module('controllers', []);
+
+
 
 })();
