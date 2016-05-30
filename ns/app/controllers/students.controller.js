@@ -9,23 +9,34 @@
 
         var vm = this;
 
-        vm.studentName = "Gianni";
+        vm.newStudent = {};
 
-        vm.setCurrentStudent = function(currentStudent){
-            if(currentStudent != vm.currentStudent)
+        vm.setStudent = function(currentStudent){
+            if(vm.currentStudent != currentStudent)
                 vm.currentStudent = currentStudent;
             else
                 vm.currentStudent = undefined;
+
         };
 
+        vm.createStudent = function(){
+            vm.allStudents.push(
+                {
+                    name: vm.newStudent.name,
+                    age: vm.newStudent.age
+                });
+
+            vm.newStudent = {};
+        }
+
         vm.allStudents = [
-            {name:"Artur", age:20},
-            {name:"Mitchell", age:18},
-            {name:"Remco", age:17},
-            {name:"Dave", age:21},
-            {name:"Sander", age:17},
-            {name:"Jimmy", age:18},
-            {name:"Yassine", age:19}
+            {name:"Anton", age:18},
+            {name:"Joris", age:29},
+            {name:"Cees", age:19},
+            {name:"Ryan", age:18},
+            {name:"Jesse", age:18},
+            {name:"Idris", age:20},
+            {name:"Donovan", age:18}
         ];
 
 
