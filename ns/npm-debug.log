@@ -1,0 +1,848 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\stijn_000\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'angular-google-maps' ]
+2 info using npm@3.8.7
+3 info using node@v5.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData angular-google-maps
+8 silly fetchNamedPackageData angular-google-maps
+9 silly mapToRegistry name angular-google-maps
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'angular-google-maps',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'angular-google-maps',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps
+14 verbose request uri https://registry.npmjs.org/angular-google-maps
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 09:21:41
+17 verbose request id 08713734cc36c37e
+18 http request GET https://registry.npmjs.org/angular-google-maps
+19 http 200 https://registry.npmjs.org/angular-google-maps
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"DB5UPKJHY9WTNXLVCV3CNWRHQ"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '7182',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Mon, 06 Jun 2016 07:21:43 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1465197703.723082,VS0,VE126',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"DB5UPKJHY9WTNXLVCV3CNWRHQ"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '7182',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Mon, 06 Jun 2016 07:21:43 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-ams4132-AMS',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1465197703.723082,VS0,VE126',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving angular-google-maps to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\angular-google-maps\.cache.json
+23 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule angular-google-maps@2.3.3 checking installable status
+37 silly cache add args [ 'angular-google-maps', null ]
+38 verbose cache add spec angular-google-maps
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'angular-google-maps',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'angular-google-maps',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed angular-google-maps@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for angular-google-maps
+42 info addNameTag [ 'angular-google-maps', 'latest' ]
+43 silly mapToRegistry name angular-google-maps
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'angular-google-maps',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   name: 'angular-google-maps',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps
+48 verbose addNameTag registry:https://registry.npmjs.org/angular-google-maps not in flight; fetching
+49 verbose get https://registry.npmjs.org/angular-google-maps not expired, no request
+50 silly addNameTag next cb for angular-google-maps with tag latest
+51 silly addNamed angular-google-maps@2.3.3
+52 verbose addNamed "2.3.3" is a plain semver version for angular-google-maps
+53 silly mapToRegistry name angular-google-maps
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'angular-google-maps',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   name: 'angular-google-maps',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/angular-google-maps
+58 verbose addRemoteTarball https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.3.3.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.3.3.tgz',
+59 verbose addRemoteTarball   '07f4c709addd5fdeb28437aaa0fc800301db602c' ]
+60 info retry fetch attempt 1 at 09:21:41
+61 info attempt registry request try #1 at 09:21:41
+62 http fetch GET https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.3.3.tgz
+63 http fetch 200 https://registry.npmjs.org/angular-google-maps/-/angular-google-maps-2.3.3.tgz
+64 silly fetchAndShaCheck shasum 07f4c709addd5fdeb28437aaa0fc800301db602c
+65 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\angular-google-maps\-\angular-google-maps-2.3.3.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for angular-google-maps@2.3.3
+67 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+68 silly cache afterAdd angular-google-maps@2.3.3
+69 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\angular-google-maps\2.3.3\package\package.json not in flight; writing
+70 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+71 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\angular-google-maps\2.3.3\package\package.json written
+72 silly fetchNamedPackageData angular-simple-logger
+73 silly mapToRegistry name angular-simple-logger
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'angular-simple-logger',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   name: 'angular-simple-logger',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/angular-simple-logger
+78 silly fetchNamedPackageData google-maps-utility-library-v3-infobox
+79 silly mapToRegistry name google-maps-utility-library-v3-infobox
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: 'google-maps-utility-library-v3-infobox',
+82 silly mapToRegistry   scope: null,
+82 silly mapToRegistry   name: 'google-maps-utility-library-v3-infobox',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+84 silly fetchNamedPackageData google-maps-utility-library-v3-keydragzoom
+85 silly mapToRegistry name google-maps-utility-library-v3-keydragzoom
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'google-maps-utility-library-v3-keydragzoom',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   name: 'google-maps-utility-library-v3-keydragzoom',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+90 silly fetchNamedPackageData lodash
+91 silly mapToRegistry name lodash
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: 'lodash',
+94 silly mapToRegistry   scope: null,
+94 silly mapToRegistry   name: 'lodash',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag' }
+95 silly mapToRegistry uri https://registry.npmjs.org/lodash
+96 silly fetchNamedPackageData markerclustererplus
+97 silly mapToRegistry name markerclustererplus
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'markerclustererplus',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   name: 'markerclustererplus',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/markerclustererplus
+102 silly fetchOtherPackageData google-maps-utility-library-v3-markerwithlabel@git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git
+103 silly cache add args [ 'google-maps-utility-library-v3-markerwithlabel@git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+103 silly cache add   null ]
+104 verbose cache add spec google-maps-utility-library-v3-markerwithlabel@git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git
+105 silly fetchOtherPackageData js-rich-marker@git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943
+106 silly cache add args [ 'js-rich-marker@git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+106 silly cache add   null ]
+107 verbose cache add spec js-rich-marker@git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943
+108 verbose request uri https://registry.npmjs.org/angular-simple-logger
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 09:21:42
+111 http request GET https://registry.npmjs.org/angular-simple-logger
+112 verbose request uri https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 09:21:42
+115 http request GET https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+116 silly cache add parsed spec Result {
+116 silly cache add   raw: 'google-maps-utility-library-v3-markerwithlabel@git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add   scope: null,
+116 silly cache add   name: 'google-maps-utility-library-v3-markerwithlabel',
+116 silly cache add   rawSpec: 'git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add   spec: 'git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add   type: 'hosted',
+116 silly cache add   hosted:
+116 silly cache add    { type: 'github',
+116 silly cache add      ssh: 'git@github.com:nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add      sshUrl: 'git+ssh://git@github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add      httpsUrl: 'git+https://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add      gitUrl: 'git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git',
+116 silly cache add      shortcut: 'github:nmccready/google-maps-utility-library-v3-markerwithlabel',
+116 silly cache add      directUrl: 'https://raw.githubusercontent.com/nmccready/google-maps-utility-library-v3-markerwithlabel/master/package.json' } }
+117 verbose addRemoteGit caching git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git
+118 verbose addRemoteGit git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git is a repository hosted by github
+119 silly tryClone cloning git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git via git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git
+120 verbose tryClone git-github-com-nmccready-google-maps-utility-library-v3-markerwithlabel-git-535ad55b not in flight; caching
+121 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+122 silly cache add parsed spec Result {
+122 silly cache add   raw: 'js-rich-marker@git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add   scope: null,
+122 silly cache add   name: 'js-rich-marker',
+122 silly cache add   rawSpec: 'git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add   spec: 'git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add   type: 'hosted',
+122 silly cache add   hosted:
+122 silly cache add    { type: 'github',
+122 silly cache add      ssh: 'git@github.com:MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add      sshUrl: 'git+ssh://git@github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add      httpsUrl: 'git+https://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add      gitUrl: 'git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add      shortcut: 'github:MikaFima/js-rich-marker#0383f4bbdad4ddf154772fedbdd27e464600e943',
+122 silly cache add      directUrl: 'https://raw.githubusercontent.com/MikaFima/js-rich-marker/0383f4bbdad4ddf154772fedbdd27e464600e943/package.json' } }
+123 verbose addRemoteGit caching git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943
+124 verbose addRemoteGit git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943 is a repository hosted by github
+125 silly tryClone cloning git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943 via git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943
+126 verbose tryClone git-github-com-MikaFima-js-rich-marker-git-0383f4bbdad4ddf154772fedbdd27e464600e943-e7abb722 not in flight; caching
+127 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+128 verbose request uri https://registry.npmjs.org/markerclustererplus
+129 verbose request no auth needed
+130 info attempt registry request try #1 at 09:21:42
+131 http request GET https://registry.npmjs.org/markerclustererplus
+132 verbose request uri https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+133 verbose request no auth needed
+134 info attempt registry request try #1 at 09:21:42
+135 http request GET https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+136 http 200 https://registry.npmjs.org/angular-simple-logger
+137 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+137 verbose headers   etag: '"8YICOOPE1I32RMI1BS5Q0EZ3X"',
+137 verbose headers   'content-type': 'application/json',
+137 verbose headers   'content-encoding': 'gzip',
+137 verbose headers   'cache-control': 'max-age=300',
+137 verbose headers   'content-length': '5226',
+137 verbose headers   'accept-ranges': 'bytes',
+137 verbose headers   date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+137 verbose headers   via: '1.1 varnish',
+137 verbose headers   age: '279',
+137 verbose headers   connection: 'keep-alive',
+137 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+137 verbose headers   'x-cache': 'HIT',
+137 verbose headers   'x-cache-hits': '1',
+137 verbose headers   'x-timer': 'S1465197704.691764,VS0,VE0',
+137 verbose headers   vary: 'Accept-Encoding' }
+138 silly get cb [ 200,
+138 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+138 silly get     etag: '"8YICOOPE1I32RMI1BS5Q0EZ3X"',
+138 silly get     'content-type': 'application/json',
+138 silly get     'content-encoding': 'gzip',
+138 silly get     'cache-control': 'max-age=300',
+138 silly get     'content-length': '5226',
+138 silly get     'accept-ranges': 'bytes',
+138 silly get     date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+138 silly get     via: '1.1 varnish',
+138 silly get     age: '279',
+138 silly get     connection: 'keep-alive',
+138 silly get     'x-served-by': 'cache-ams4135-AMS',
+138 silly get     'x-cache': 'HIT',
+138 silly get     'x-cache-hits': '1',
+138 silly get     'x-timer': 'S1465197704.691764,VS0,VE0',
+138 silly get     vary: 'Accept-Encoding' } ]
+139 verbose get saving angular-simple-logger to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\angular-simple-logger\.cache.json
+140 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+141 http 200 https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+142 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+142 verbose headers   etag: '"6ZCXYKNZ960ENQKOOMYKS00SC"',
+142 verbose headers   'content-type': 'application/json',
+142 verbose headers   'content-encoding': 'gzip',
+142 verbose headers   'cache-control': 'max-age=300',
+142 verbose headers   'content-length': '1560',
+142 verbose headers   'accept-ranges': 'bytes',
+142 verbose headers   date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+142 verbose headers   via: '1.1 varnish',
+142 verbose headers   age: '279',
+142 verbose headers   connection: 'keep-alive',
+142 verbose headers   'x-served-by': 'cache-ams4128-AMS',
+142 verbose headers   'x-cache': 'HIT',
+142 verbose headers   'x-cache-hits': '1',
+142 verbose headers   'x-timer': 'S1465197704.694959,VS0,VE0',
+142 verbose headers   vary: 'Accept-Encoding' }
+143 silly get cb [ 200,
+143 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+143 silly get     etag: '"6ZCXYKNZ960ENQKOOMYKS00SC"',
+143 silly get     'content-type': 'application/json',
+143 silly get     'content-encoding': 'gzip',
+143 silly get     'cache-control': 'max-age=300',
+143 silly get     'content-length': '1560',
+143 silly get     'accept-ranges': 'bytes',
+143 silly get     date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     age: '279',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-ams4128-AMS',
+143 silly get     'x-cache': 'HIT',
+143 silly get     'x-cache-hits': '1',
+143 silly get     'x-timer': 'S1465197704.694959,VS0,VE0',
+143 silly get     vary: 'Accept-Encoding' } ]
+144 verbose get saving google-maps-utility-library-v3-infobox to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\google-maps-utility-library-v3-infobox\.cache.json
+145 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+146 http 200 https://registry.npmjs.org/markerclustererplus
+147 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+147 verbose headers   etag: '"DBCNME7X11UTJJ8ZOQAC86VWT"',
+147 verbose headers   'content-type': 'application/json',
+147 verbose headers   'content-encoding': 'gzip',
+147 verbose headers   'cache-control': 'max-age=300',
+147 verbose headers   'content-length': '1868',
+147 verbose headers   'accept-ranges': 'bytes',
+147 verbose headers   date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+147 verbose headers   via: '1.1 varnish',
+147 verbose headers   age: '279',
+147 verbose headers   connection: 'keep-alive',
+147 verbose headers   'x-served-by': 'cache-ams4137-AMS',
+147 verbose headers   'x-cache': 'HIT',
+147 verbose headers   'x-cache-hits': '1',
+147 verbose headers   'x-timer': 'S1465197704.699176,VS0,VE0',
+147 verbose headers   vary: 'Accept-Encoding' }
+148 silly get cb [ 200,
+148 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+148 silly get     etag: '"DBCNME7X11UTJJ8ZOQAC86VWT"',
+148 silly get     'content-type': 'application/json',
+148 silly get     'content-encoding': 'gzip',
+148 silly get     'cache-control': 'max-age=300',
+148 silly get     'content-length': '1868',
+148 silly get     'accept-ranges': 'bytes',
+148 silly get     date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+148 silly get     via: '1.1 varnish',
+148 silly get     age: '279',
+148 silly get     connection: 'keep-alive',
+148 silly get     'x-served-by': 'cache-ams4137-AMS',
+148 silly get     'x-cache': 'HIT',
+148 silly get     'x-cache-hits': '1',
+148 silly get     'x-timer': 'S1465197704.699176,VS0,VE0',
+148 silly get     vary: 'Accept-Encoding' } ]
+149 verbose get saving markerclustererplus to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\markerclustererplus\.cache.json
+150 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+151 silly resolveWithNewModule angular-simple-logger@0.1.7 checking installable status
+152 silly cache add args [ 'angular-simple-logger@>=0.0.1', null ]
+153 verbose cache add spec angular-simple-logger@>=0.0.1
+154 silly cache add parsed spec Result {
+154 silly cache add   raw: 'angular-simple-logger@>=0.0.1',
+154 silly cache add   scope: null,
+154 silly cache add   name: 'angular-simple-logger',
+154 silly cache add   rawSpec: '>=0.0.1',
+154 silly cache add   spec: '>=0.0.1',
+154 silly cache add   type: 'range' }
+155 silly addNamed angular-simple-logger@>=0.0.1
+156 verbose addNamed ">=0.0.1" is a valid semver range for angular-simple-logger
+157 silly addNameRange { name: 'angular-simple-logger',
+157 silly addNameRange   range: '>=0.0.1',
+157 silly addNameRange   hasData: false }
+158 silly mapToRegistry name angular-simple-logger
+159 silly mapToRegistry using default registry
+160 silly mapToRegistry registry https://registry.npmjs.org/
+161 silly mapToRegistry data Result {
+161 silly mapToRegistry   raw: 'angular-simple-logger',
+161 silly mapToRegistry   scope: null,
+161 silly mapToRegistry   name: 'angular-simple-logger',
+161 silly mapToRegistry   rawSpec: '',
+161 silly mapToRegistry   spec: 'latest',
+161 silly mapToRegistry   type: 'tag' }
+162 silly mapToRegistry uri https://registry.npmjs.org/angular-simple-logger
+163 verbose addNameRange registry:https://registry.npmjs.org/angular-simple-logger not in flight; fetching
+164 silly resolveWithNewModule google-maps-utility-library-v3-infobox@1.1.14 checking installable status
+165 silly cache add args [ 'google-maps-utility-library-v3-infobox@1.1.14', null ]
+166 verbose cache add spec google-maps-utility-library-v3-infobox@1.1.14
+167 silly cache add parsed spec Result {
+167 silly cache add   raw: 'google-maps-utility-library-v3-infobox@1.1.14',
+167 silly cache add   scope: null,
+167 silly cache add   name: 'google-maps-utility-library-v3-infobox',
+167 silly cache add   rawSpec: '1.1.14',
+167 silly cache add   spec: '1.1.14',
+167 silly cache add   type: 'version' }
+168 silly addNamed google-maps-utility-library-v3-infobox@1.1.14
+169 verbose addNamed "1.1.14" is a plain semver version for google-maps-utility-library-v3-infobox
+170 silly mapToRegistry name google-maps-utility-library-v3-infobox
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry data Result {
+173 silly mapToRegistry   raw: 'google-maps-utility-library-v3-infobox',
+173 silly mapToRegistry   scope: null,
+173 silly mapToRegistry   name: 'google-maps-utility-library-v3-infobox',
+173 silly mapToRegistry   rawSpec: '',
+173 silly mapToRegistry   spec: 'latest',
+173 silly mapToRegistry   type: 'tag' }
+174 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+175 verbose addNameVersion registry:https://registry.npmjs.org/google-maps-utility-library-v3-infobox not in flight; fetching
+176 http 200 https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+177 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+177 verbose headers   etag: '"71E1IW5FJZN0PN10KWII4UW57"',
+177 verbose headers   'content-type': 'application/json',
+177 verbose headers   'content-encoding': 'gzip',
+177 verbose headers   'cache-control': 'max-age=300',
+177 verbose headers   'content-length': '1383',
+177 verbose headers   'accept-ranges': 'bytes',
+177 verbose headers   date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+177 verbose headers   via: '1.1 varnish',
+177 verbose headers   age: '280',
+177 verbose headers   connection: 'keep-alive',
+177 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+177 verbose headers   'x-cache': 'HIT',
+177 verbose headers   'x-cache-hits': '1',
+177 verbose headers   'x-timer': 'S1465197704.706012,VS0,VE0',
+177 verbose headers   vary: 'Accept-Encoding' }
+178 silly get cb [ 200,
+178 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+178 silly get     etag: '"71E1IW5FJZN0PN10KWII4UW57"',
+178 silly get     'content-type': 'application/json',
+178 silly get     'content-encoding': 'gzip',
+178 silly get     'cache-control': 'max-age=300',
+178 silly get     'content-length': '1383',
+178 silly get     'accept-ranges': 'bytes',
+178 silly get     date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+178 silly get     via: '1.1 varnish',
+178 silly get     age: '280',
+178 silly get     connection: 'keep-alive',
+178 silly get     'x-served-by': 'cache-ams4123-AMS',
+178 silly get     'x-cache': 'HIT',
+178 silly get     'x-cache-hits': '1',
+178 silly get     'x-timer': 'S1465197704.706012,VS0,VE0',
+178 silly get     vary: 'Accept-Encoding' } ]
+179 verbose get saving google-maps-utility-library-v3-keydragzoom to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\google-maps-utility-library-v3-keydragzoom\.cache.json
+180 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+181 verbose get https://registry.npmjs.org/angular-simple-logger not expired, no request
+182 silly addNameRange number 2 { name: 'angular-simple-logger',
+182 silly addNameRange   range: '>=0.0.1',
+182 silly addNameRange   hasData: true }
+183 silly addNameRange versions [ 'angular-simple-logger',
+183 silly addNameRange   [ '0.0.1',
+183 silly addNameRange     '0.0.2',
+183 silly addNameRange     '0.0.3',
+183 silly addNameRange     '0.0.4',
+183 silly addNameRange     '0.1.0',
+183 silly addNameRange     '0.1.1',
+183 silly addNameRange     '0.1.2',
+183 silly addNameRange     '0.1.3',
+183 silly addNameRange     '0.1.4',
+183 silly addNameRange     '0.1.5',
+183 silly addNameRange     '0.1.6',
+183 silly addNameRange     '0.1.7' ] ]
+184 silly addNamed angular-simple-logger@0.1.7
+185 verbose addNamed "0.1.7" is a plain semver version for angular-simple-logger
+186 silly resolveWithNewModule markerclustererplus@2.1.4 checking installable status
+187 silly cache add args [ 'markerclustererplus@2.1.4', null ]
+188 verbose cache add spec markerclustererplus@2.1.4
+189 silly cache add parsed spec Result {
+189 silly cache add   raw: 'markerclustererplus@2.1.4',
+189 silly cache add   scope: null,
+189 silly cache add   name: 'markerclustererplus',
+189 silly cache add   rawSpec: '2.1.4',
+189 silly cache add   spec: '2.1.4',
+189 silly cache add   type: 'version' }
+190 silly addNamed markerclustererplus@2.1.4
+191 verbose addNamed "2.1.4" is a plain semver version for markerclustererplus
+192 silly mapToRegistry name markerclustererplus
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry data Result {
+195 silly mapToRegistry   raw: 'markerclustererplus',
+195 silly mapToRegistry   scope: null,
+195 silly mapToRegistry   name: 'markerclustererplus',
+195 silly mapToRegistry   rawSpec: '',
+195 silly mapToRegistry   spec: 'latest',
+195 silly mapToRegistry   type: 'tag' }
+196 silly mapToRegistry uri https://registry.npmjs.org/markerclustererplus
+197 verbose addNameVersion registry:https://registry.npmjs.org/markerclustererplus not in flight; fetching
+198 silly mapToRegistry name angular-simple-logger
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry data Result {
+201 silly mapToRegistry   raw: 'angular-simple-logger',
+201 silly mapToRegistry   scope: null,
+201 silly mapToRegistry   name: 'angular-simple-logger',
+201 silly mapToRegistry   rawSpec: '',
+201 silly mapToRegistry   spec: 'latest',
+201 silly mapToRegistry   type: 'tag' }
+202 silly mapToRegistry uri https://registry.npmjs.org/angular-simple-logger
+203 verbose addRemoteTarball https://registry.npmjs.org/angular-simple-logger/-/angular-simple-logger-0.1.7.tgz not in flight; adding
+204 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-simple-logger/-/angular-simple-logger-0.1.7.tgz',
+204 verbose addRemoteTarball   '4ae48e5eac0973f577845918e56d4933cf66f041' ]
+205 verbose request uri https://registry.npmjs.org/lodash
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 09:21:42
+208 verbose etag "27FMCLMCR0QTJAVLSTPHB71H2"
+209 http request GET https://registry.npmjs.org/lodash
+210 verbose get https://registry.npmjs.org/google-maps-utility-library-v3-infobox not expired, no request
+211 verbose get https://registry.npmjs.org/markerclustererplus not expired, no request
+212 info retry fetch attempt 1 at 09:21:42
+213 info attempt registry request try #1 at 09:21:42
+214 http fetch GET https://registry.npmjs.org/angular-simple-logger/-/angular-simple-logger-0.1.7.tgz
+215 http 200 https://registry.npmjs.org/lodash
+216 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+216 verbose headers   etag: '"6VAYE0I4IO69576P5T1PJ60VD"',
+216 verbose headers   'content-type': 'application/json',
+216 verbose headers   'content-encoding': 'gzip',
+216 verbose headers   'cache-control': 'max-age=300',
+216 verbose headers   'content-length': '17512',
+216 verbose headers   'accept-ranges': 'bytes',
+216 verbose headers   date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+216 verbose headers   via: '1.1 varnish',
+216 verbose headers   age: '71',
+216 verbose headers   connection: 'keep-alive',
+216 verbose headers   'x-served-by': 'cache-ams4139-AMS',
+216 verbose headers   'x-cache': 'HIT',
+216 verbose headers   'x-cache-hits': '11',
+216 verbose headers   'x-timer': 'S1465197704.757583,VS0,VE0',
+216 verbose headers   vary: 'Accept-Encoding' }
+217 silly get cb [ 200,
+217 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+217 silly get     etag: '"6VAYE0I4IO69576P5T1PJ60VD"',
+217 silly get     'content-type': 'application/json',
+217 silly get     'content-encoding': 'gzip',
+217 silly get     'cache-control': 'max-age=300',
+217 silly get     'content-length': '17512',
+217 silly get     'accept-ranges': 'bytes',
+217 silly get     date: 'Mon, 06 Jun 2016 07:21:44 GMT',
+217 silly get     via: '1.1 varnish',
+217 silly get     age: '71',
+217 silly get     connection: 'keep-alive',
+217 silly get     'x-served-by': 'cache-ams4139-AMS',
+217 silly get     'x-cache': 'HIT',
+217 silly get     'x-cache-hits': '11',
+217 silly get     'x-timer': 'S1465197704.757583,VS0,VE0',
+217 silly get     vary: 'Accept-Encoding' } ]
+218 verbose get saving lodash to C:\Users\stijn_000\AppData\Roaming\npm-cache\registry.npmjs.org\lodash\.cache.json
+219 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+220 silly mapToRegistry name google-maps-utility-library-v3-infobox
+221 silly mapToRegistry using default registry
+222 silly mapToRegistry registry https://registry.npmjs.org/
+223 silly mapToRegistry data Result {
+223 silly mapToRegistry   raw: 'google-maps-utility-library-v3-infobox',
+223 silly mapToRegistry   scope: null,
+223 silly mapToRegistry   name: 'google-maps-utility-library-v3-infobox',
+223 silly mapToRegistry   rawSpec: '',
+223 silly mapToRegistry   spec: 'latest',
+223 silly mapToRegistry   type: 'tag' }
+224 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-infobox
+225 verbose addRemoteTarball https://registry.npmjs.org/google-maps-utility-library-v3-infobox/-/google-maps-utility-library-v3-infobox-1.1.14.tgz not in flight; adding
+226 verbose addRemoteTarball [ 'https://registry.npmjs.org/google-maps-utility-library-v3-infobox/-/google-maps-utility-library-v3-infobox-1.1.14.tgz',
+226 verbose addRemoteTarball   '69c888cef8bff869c32275e3413d90cc09392914' ]
+227 silly mapToRegistry name markerclustererplus
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry data Result {
+230 silly mapToRegistry   raw: 'markerclustererplus',
+230 silly mapToRegistry   scope: null,
+230 silly mapToRegistry   name: 'markerclustererplus',
+230 silly mapToRegistry   rawSpec: '',
+230 silly mapToRegistry   spec: 'latest',
+230 silly mapToRegistry   type: 'tag' }
+231 silly mapToRegistry uri https://registry.npmjs.org/markerclustererplus
+232 verbose addRemoteTarball https://registry.npmjs.org/markerclustererplus/-/markerclustererplus-2.1.4.tgz not in flight; adding
+233 verbose addRemoteTarball [ 'https://registry.npmjs.org/markerclustererplus/-/markerclustererplus-2.1.4.tgz',
+233 verbose addRemoteTarball   '901225180dd5d5fc0827753a18eee35afcf9c4f7' ]
+234 info retry fetch attempt 1 at 09:21:42
+235 info attempt registry request try #1 at 09:21:42
+236 http fetch GET https://registry.npmjs.org/google-maps-utility-library-v3-infobox/-/google-maps-utility-library-v3-infobox-1.1.14.tgz
+237 info retry fetch attempt 1 at 09:21:42
+238 info attempt registry request try #1 at 09:21:42
+239 http fetch GET https://registry.npmjs.org/markerclustererplus/-/markerclustererplus-2.1.4.tgz
+240 silly resolveWithNewModule google-maps-utility-library-v3-keydragzoom@2.0.9 checking installable status
+241 silly cache add args [ 'google-maps-utility-library-v3-keydragzoom@2.0.9', null ]
+242 verbose cache add spec google-maps-utility-library-v3-keydragzoom@2.0.9
+243 silly cache add parsed spec Result {
+243 silly cache add   raw: 'google-maps-utility-library-v3-keydragzoom@2.0.9',
+243 silly cache add   scope: null,
+243 silly cache add   name: 'google-maps-utility-library-v3-keydragzoom',
+243 silly cache add   rawSpec: '2.0.9',
+243 silly cache add   spec: '2.0.9',
+243 silly cache add   type: 'version' }
+244 silly addNamed google-maps-utility-library-v3-keydragzoom@2.0.9
+245 verbose addNamed "2.0.9" is a plain semver version for google-maps-utility-library-v3-keydragzoom
+246 silly mapToRegistry name google-maps-utility-library-v3-keydragzoom
+247 silly mapToRegistry using default registry
+248 silly mapToRegistry registry https://registry.npmjs.org/
+249 silly mapToRegistry data Result {
+249 silly mapToRegistry   raw: 'google-maps-utility-library-v3-keydragzoom',
+249 silly mapToRegistry   scope: null,
+249 silly mapToRegistry   name: 'google-maps-utility-library-v3-keydragzoom',
+249 silly mapToRegistry   rawSpec: '',
+249 silly mapToRegistry   spec: 'latest',
+249 silly mapToRegistry   type: 'tag' }
+250 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+251 verbose addNameVersion registry:https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom not in flight; fetching
+252 verbose get https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom not expired, no request
+253 silly mapToRegistry name google-maps-utility-library-v3-keydragzoom
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'google-maps-utility-library-v3-keydragzoom',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   name: 'google-maps-utility-library-v3-keydragzoom',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom
+258 verbose addRemoteTarball https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom/-/google-maps-utility-library-v3-keydragzoom-2.0.9.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom/-/google-maps-utility-library-v3-keydragzoom-2.0.9.tgz',
+259 verbose addRemoteTarball   '2dfa05fed2976d82fc1cc39fcc6175c01ec06477' ]
+260 silly resolveWithNewModule lodash@4.13.1 checking installable status
+261 silly cache add args [ 'lodash@3.X - 4.X', null ]
+262 verbose cache add spec lodash@3.X - 4.X
+263 silly cache add parsed spec Result {
+263 silly cache add   raw: 'lodash@3.X - 4.X',
+263 silly cache add   scope: null,
+263 silly cache add   name: 'lodash',
+263 silly cache add   rawSpec: '3.X - 4.X',
+263 silly cache add   spec: '>=3.0.0 <5.0.0',
+263 silly cache add   type: 'range' }
+264 silly addNamed lodash@>=3.0.0 <5.0.0
+265 verbose addNamed ">=3.0.0 <5.0.0" is a valid semver range for lodash
+266 silly addNameRange { name: 'lodash', range: '>=3.0.0 <5.0.0', hasData: false }
+267 silly mapToRegistry name lodash
+268 silly mapToRegistry using default registry
+269 silly mapToRegistry registry https://registry.npmjs.org/
+270 silly mapToRegistry data Result {
+270 silly mapToRegistry   raw: 'lodash',
+270 silly mapToRegistry   scope: null,
+270 silly mapToRegistry   name: 'lodash',
+270 silly mapToRegistry   rawSpec: '',
+270 silly mapToRegistry   spec: 'latest',
+270 silly mapToRegistry   type: 'tag' }
+271 silly mapToRegistry uri https://registry.npmjs.org/lodash
+272 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+273 info retry fetch attempt 1 at 09:21:42
+274 info attempt registry request try #1 at 09:21:42
+275 http fetch GET https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom/-/google-maps-utility-library-v3-keydragzoom-2.0.9.tgz
+276 verbose get https://registry.npmjs.org/lodash not expired, no request
+277 silly addNameRange number 2 { name: 'lodash', range: '>=3.0.0 <5.0.0', hasData: true }
+278 silly addNameRange versions [ 'lodash',
+278 silly addNameRange   [ '0.1.0',
+278 silly addNameRange     '0.2.0',
+278 silly addNameRange     '0.2.1',
+278 silly addNameRange     '0.2.2',
+278 silly addNameRange     '0.3.0',
+278 silly addNameRange     '0.3.1',
+278 silly addNameRange     '0.3.2',
+278 silly addNameRange     '0.4.0',
+278 silly addNameRange     '0.4.1',
+278 silly addNameRange     '0.4.2',
+278 silly addNameRange     '0.5.0-rc.1',
+278 silly addNameRange     '0.5.0',
+278 silly addNameRange     '0.5.1',
+278 silly addNameRange     '0.5.2',
+278 silly addNameRange     '0.6.0',
+278 silly addNameRange     '0.6.1',
+278 silly addNameRange     '0.7.0',
+278 silly addNameRange     '0.8.0',
+278 silly addNameRange     '0.8.1',
+278 silly addNameRange     '0.8.2',
+278 silly addNameRange     '0.9.0',
+278 silly addNameRange     '0.9.1',
+278 silly addNameRange     '0.9.2',
+278 silly addNameRange     '0.10.0',
+278 silly addNameRange     '1.0.0-rc.1',
+278 silly addNameRange     '1.0.0-rc.2',
+278 silly addNameRange     '1.0.0-rc.3',
+278 silly addNameRange     '1.0.0',
+278 silly addNameRange     '1.0.1',
+278 silly addNameRange     '1.1.0',
+278 silly addNameRange     '1.1.1',
+278 silly addNameRange     '1.2.0',
+278 silly addNameRange     '1.2.1',
+278 silly addNameRange     '1.3.0',
+278 silly addNameRange     '1.3.1',
+278 silly addNameRange     '2.0.0',
+278 silly addNameRange     '2.1.0',
+278 silly addNameRange     '2.2.0',
+278 silly addNameRange     '2.2.1',
+278 silly addNameRange     '2.3.0',
+278 silly addNameRange     '2.4.0',
+278 silly addNameRange     '2.4.1',
+278 silly addNameRange     '3.0.0',
+278 silly addNameRange     '3.0.1',
+278 silly addNameRange     '3.1.0',
+278 silly addNameRange     '3.2.0',
+278 silly addNameRange     '3.3.0',
+278 silly addNameRange     '3.3.1',
+278 silly addNameRange     '3.4.0',
+278 silly addNameRange     '3.5.0',
+278 silly addNameRange     '3.6.0',
+278 silly addNameRange     '1.0.2',
+278 silly addNameRange     '3.7.0',
+278 silly addNameRange     '2.4.2',
+278 silly addNameRange     '3.8.0',
+278 silly addNameRange     '3.9.0',
+278 silly addNameRange     '3.9.1',
+278 silly addNameRange     '3.9.2',
+278 silly addNameRange     '3.9.3',
+278 silly addNameRange     '3.10.0',
+278 silly addNameRange     '3.10.1',
+278 silly addNameRange     '4.0.0',
+278 silly addNameRange     '4.0.1',
+278 silly addNameRange     '4.1.0',
+278 silly addNameRange     '4.2.0',
+278 silly addNameRange     '4.2.1',
+278 silly addNameRange     '4.3.0',
+278 silly addNameRange     '4.4.0',
+278 silly addNameRange     '4.5.0',
+278 silly addNameRange     '4.5.1',
+278 silly addNameRange     '4.6.0',
+278 silly addNameRange     '4.6.1',
+278 silly addNameRange     '4.7.0',
+278 silly addNameRange     '4.8.0',
+278 silly addNameRange     '4.8.1',
+278 silly addNameRange     '4.8.2',
+278 silly addNameRange     '4.9.0',
+278 silly addNameRange     '4.10.0',
+278 silly addNameRange     '4.11.0',
+278 silly addNameRange     '4.11.1',
+278 silly addNameRange     '4.11.2',
+278 silly addNameRange     '4.12.0',
+278 silly addNameRange     '4.13.0',
+278 silly addNameRange     '4.13.1' ] ]
+279 silly addNamed lodash@4.13.1
+280 verbose addNamed "4.13.1" is a plain semver version for lodash
+281 silly mapToRegistry name lodash
+282 silly mapToRegistry using default registry
+283 silly mapToRegistry registry https://registry.npmjs.org/
+284 silly mapToRegistry data Result {
+284 silly mapToRegistry   raw: 'lodash',
+284 silly mapToRegistry   scope: null,
+284 silly mapToRegistry   name: 'lodash',
+284 silly mapToRegistry   rawSpec: '',
+284 silly mapToRegistry   spec: 'latest',
+284 silly mapToRegistry   type: 'tag' }
+285 silly mapToRegistry uri https://registry.npmjs.org/lodash
+286 verbose addRemoteTarball https://registry.npmjs.org/lodash/-/lodash-4.13.1.tgz not in flight; adding
+287 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash/-/lodash-4.13.1.tgz',
+287 verbose addRemoteTarball   '83e4b10913f48496d4d16fec4a560af2ee744b68' ]
+288 info retry fetch attempt 1 at 09:21:42
+289 info attempt registry request try #1 at 09:21:42
+290 http fetch GET https://registry.npmjs.org/lodash/-/lodash-4.13.1.tgz
+291 error git clone --template=C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/MikaFima/js-rich-marker.git C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\git-github-com-MikaFima-js-rich-marker-git-0383f4bbdad4ddf154772fedbdd27e464600e943-e7abb722: undefined
+291 error git clone --template=C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/MikaFima/js-rich-marker.git C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\git-github-com-MikaFima-js-rich-marker-git-0383f4bbdad4ddf154772fedbdd27e464600e943-e7abb722: undefined
+292 silly fetchPackageMetaData Error: not found: git
+292 silly fetchPackageMetaData     at F (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:63:19)
+292 silly fetchPackageMetaData     at E (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:72:29)
+292 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:81:16
+292 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+292 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+292 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+292 silly fetchPackageMetaData  error for js-rich-marker@git://github.com/MikaFima/js-rich-marker.git#0383f4bbdad4ddf154772fedbdd27e464600e943 { [Error: not found: git] code: 'ENOGIT' }
+293 error git clone --template=C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\git-github-com-nmccready-google-maps-utility-library-v3-markerwithlabel-git-535ad55b: undefined
+293 error git clone --template=C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git C:\Users\stijn_000\AppData\Roaming\npm-cache\_git-remotes\git-github-com-nmccready-google-maps-utility-library-v3-markerwithlabel-git-535ad55b: undefined
+294 silly fetchPackageMetaData Error: not found: git
+294 silly fetchPackageMetaData     at F (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:63:19)
+294 silly fetchPackageMetaData     at E (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:72:29)
+294 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:81:16
+294 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+294 silly fetchPackageMetaData     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+294 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+294 silly fetchPackageMetaData  error for google-maps-utility-library-v3-markerwithlabel@git://github.com/nmccready/google-maps-utility-library-v3-markerwithlabel.git { [Error: not found: git] code: 'ENOGIT' }
+295 http fetch 200 https://registry.npmjs.org/markerclustererplus/-/markerclustererplus-2.1.4.tgz
+296 http fetch 200 https://registry.npmjs.org/lodash/-/lodash-4.13.1.tgz
+297 http fetch 200 https://registry.npmjs.org/angular-simple-logger/-/angular-simple-logger-0.1.7.tgz
+298 silly fetchAndShaCheck shasum 4ae48e5eac0973f577845918e56d4933cf66f041
+299 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\angular-simple-logger\-\angular-simple-logger-0.1.7.tgz not in flight; adding
+300 verbose addTmpTarball already have metadata; skipping unpack for angular-simple-logger@0.1.7
+301 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+302 silly cache afterAdd angular-simple-logger@0.1.7
+303 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\angular-simple-logger\0.1.7\package\package.json not in flight; writing
+304 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+305 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\angular-simple-logger\0.1.7\package\package.json written
+306 silly fetchAndShaCheck shasum 901225180dd5d5fc0827753a18eee35afcf9c4f7
+307 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\markerclustererplus\-\markerclustererplus-2.1.4.tgz not in flight; adding
+308 verbose addTmpTarball already have metadata; skipping unpack for markerclustererplus@2.1.4
+309 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+310 silly cache afterAdd markerclustererplus@2.1.4
+311 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\markerclustererplus\2.1.4\package\package.json not in flight; writing
+312 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+313 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\markerclustererplus\2.1.4\package\package.json written
+314 http fetch 200 https://registry.npmjs.org/google-maps-utility-library-v3-infobox/-/google-maps-utility-library-v3-infobox-1.1.14.tgz
+315 http fetch 200 https://registry.npmjs.org/google-maps-utility-library-v3-keydragzoom/-/google-maps-utility-library-v3-keydragzoom-2.0.9.tgz
+316 silly fetchAndShaCheck shasum 69c888cef8bff869c32275e3413d90cc09392914
+317 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\google-maps-utility-library-v3-infobox\-\google-maps-utility-library-v3-infobox-1.1.14.tgz not in flight; adding
+318 verbose addTmpTarball already have metadata; skipping unpack for google-maps-utility-library-v3-infobox@1.1.14
+319 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+320 silly fetchAndShaCheck shasum 83e4b10913f48496d4d16fec4a560af2ee744b68
+321 silly fetchAndShaCheck shasum 2dfa05fed2976d82fc1cc39fcc6175c01ec06477
+322 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\google-maps-utility-library-v3-keydragzoom\-\google-maps-utility-library-v3-keydragzoom-2.0.9.tgz not in flight; adding
+323 verbose addTmpTarball already have metadata; skipping unpack for google-maps-utility-library-v3-keydragzoom@2.0.9
+324 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+325 verbose addTmpTarball C:\Users\STIJN_~1\AppData\Local\Temp\npm-3788-f7b9e3be\registry.npmjs.org\lodash\-\lodash-4.13.1.tgz not in flight; adding
+326 verbose addTmpTarball already have metadata; skipping unpack for lodash@4.13.1
+327 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+328 silly cache afterAdd google-maps-utility-library-v3-infobox@1.1.14
+329 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\google-maps-utility-library-v3-infobox\1.1.14\package\package.json not in flight; writing
+330 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+331 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\google-maps-utility-library-v3-infobox\1.1.14\package\package.json written
+332 silly cache afterAdd google-maps-utility-library-v3-keydragzoom@2.0.9
+333 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\google-maps-utility-library-v3-keydragzoom\2.0.9\package\package.json not in flight; writing
+334 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+335 silly cache afterAdd lodash@4.13.1
+336 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\lodash\4.13.1\package\package.json not in flight; writing
+337 verbose correctMkdir C:\Users\stijn_000\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+338 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\google-maps-utility-library-v3-keydragzoom\2.0.9\package\package.json written
+339 verbose afterAdd C:\Users\stijn_000\AppData\Roaming\npm-cache\lodash\4.13.1\package\package.json written
+340 silly rollbackFailedOptional Starting
+341 silly rollbackFailedOptional Finishing
+342 silly runTopLevelLifecycles Starting
+343 silly runTopLevelLifecycles Finishing
+344 silly install printInstalled
+345 verbose stack Error: not found: git
+345 verbose stack     at F (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:63:19)
+345 verbose stack     at E (C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:72:29)
+345 verbose stack     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\which.js:81:16
+345 verbose stack     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+345 verbose stack     at C:\Users\stijn_000\AppData\Roaming\npm\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+345 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+346 verbose cwd C:\wamp\www\leerjaar2\periode4\sct\ns_project\ns
+347 error Windows_NT 10.0.10586
+348 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\stijn_000\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular-google-maps"
+349 error node v5.5.0
+350 error npm  v3.8.7
+351 error code ENOGIT
+352 error not found: git
+353 error Failed using git.
+353 error This is most likely not a problem with npm itself.
+353 error Please check if you have git installed and in your PATH.
+354 verbose exit [ 1, true ]

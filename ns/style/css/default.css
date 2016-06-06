@@ -6,6 +6,7 @@ input, .studentsList-row {
 
 .studentsList {
   margin: 10px 0px;
+  display: inline-block;
 }
 
 .studentsList-row {
@@ -39,6 +40,7 @@ input, .studentsList-row {
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FFCC18;
 }
 
 .studentDetails {
@@ -46,6 +48,8 @@ body {
   height:100px;
   border:1px solid black;
   padding:5px;
+  display: inline-block;
+  float: right;
 }
 
 .studentDetails.ng-enter,
@@ -54,6 +58,7 @@ body {
   -ms-transform: scale(0.95); /* IE 9 */
   -webkit-transform: scale(0.95); /* Safari */
   transform: scale(0.95);
+  posi: rotateY(180deg);
 }
 
 .studentDetails.ng-leave,
@@ -62,6 +67,7 @@ body {
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari */
   transform: scale(1);
+  transform: rotateY(180deg);
 }
 
 .animatedCSS {
@@ -71,3 +77,5 @@ body {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+
+.angular-google-map-container { height: 400px; }

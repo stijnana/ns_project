@@ -14,36 +14,52 @@
     <!-- met de ng-controller directive koppelen we een container aan een controller
     met een controller geven we de 'view' toegang tot de 'model'
     -->
-        <div class="homeLogo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" width="600px">
-        </div>
+        <!--<div>-->
+            <!--<div class="homeLogo">-->
+                <!--<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" width="600px">-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <div class="studentsList" ng-controller="StudentsController as students">
+    <div class="studentsList" ng-controller="StudentsController as students">
 
             <!--<div class="newStudent">-->
                 <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
                 <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
                 <!--<div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>-->
             <!--</div>-->
+        
+        <!--<div class="newStudent">-->
+        <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
+        <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
+        <!--<div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>-->
+        <!--</div>-->
 
-            <div class="studentsList">
-                <div>Er zijn {{students.allStudents.length}} studenten in deze array</div>
-                <input type="text" placeholder="Doorzoek de lijst" ng-model="students.searchQuery">
-                <div class="studentsList-row animatedCSS" ng-class="{active:students.currentStudent==currentStudent}" ng-click="students.setStudent(currentStudent)" ng-repeat="currentStudent in students.allStudents | filter:students.searchQuery">
-                    {{currentStudent.name}}
-                </div>
+        <div class="studentsList">
+            <div>Er zijn {{students.allStudents.length}} stations in deze array</div>
+            <input type="text" placeholder="Doorzoek de lijst" ng-model="students.searchQuery">
+            <div class="studentsList-row animatedCSS" ng-class="{active:students.currentStudent==currentStudent}" ng-click="students.setStudent(currentStudent)" ng-repeat="currentStudent in students.allStudents | filter:students.searchQuery | limitTo: 10  ">
+                {{currentStudent.name}}
             </div>
-
-            <div class="studentDetails animatedCSS" ng-if="students.currentStudent">
-                <div>De geselecteerde student is: {{students.currentStudent.name}}</div>
-                <div>Zijn/haar leeftijd is: {{students.currentStudent.age}}</div>
-            </div>
-
         </div>
 
-        <script src="node_modules/angular/angular.js"></script>
-        <script src="node_modules/angular-animate/angular-animate.js"></script>
-        <script src="app/app.js"></script>
-        <script src="app/controllers/students.controller.js"></script>
+        <div class="studentDetails animatedCSS" ng-if="students.currentStudent">
+            <div>De geselecteerde stations is: {{students.currentStudent.name}}</div>
+            <div>De station code is: {{students.currentStudent.code}}</div>
+        </div>
+
+    </div>
+
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/students.controller.js"></script>
+    <script src='/path/to/lodash[.min].js'></script>
+    <script src='/path/to/angular[.min].js'></script>
+    <script src='/path/to/angular-simple-logger/angular-simple-logger[.min].js'></script>
+    <script src='/path/to/angular-google-maps[.min].js'></script>
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
     </body>
 </html>
