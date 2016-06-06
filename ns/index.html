@@ -15,16 +15,16 @@
     met een controller geven we de 'view' toegang tot de 'model'
     -->
         <div class="homeLogo">
-            <img src="http://www.partnerinmarketing.nl/2016_02_04/wp-content/uploads/Nederlandse-spoorwegen-NS-logo.png" width="600px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" width="600px">
         </div>
 
         <div class="studentsList" ng-controller="StudentsController as students">
 
-            <div class="newStudent">
-                <input type="text" placeholder="naam" ng-model="students.newStudent.name">
-                <input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">
-                <div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>
-            </div>
+            <!--<div class="newStudent">-->
+                <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
+                <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
+                <!--<div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>-->
+            <!--</div>-->
 
             <div class="studentsList">
                 <div>Er zijn {{students.allStudents.length}} studenten in deze array</div>
