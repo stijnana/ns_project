@@ -20,14 +20,9 @@
             <!--</div>-->
         <!--</div>-->
 
+
     <div class="studentsList" ng-controller="StudentsController as students">
 
-            <!--<div class="newStudent">-->
-                <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
-                <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
-                <!--<div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>-->
-            <!--</div>-->
-        
         <!--<div class="newStudent">-->
         <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
         <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
@@ -47,19 +42,22 @@
             <div>De station code is: {{students.currentStudent.code}}</div>
         </div>
 
+        <ui-gmap-google-map center='students.map.center' zoom='students.map.zoom'></ui-gmap-google-map>
+
     </div>
 
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
 
 
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-animate/angular-animate.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/students.controller.js"></script>
-    <script src='/path/to/lodash[.min].js'></script>
-    <script src='/path/to/angular[.min].js'></script>
-    <script src='/path/to/angular-simple-logger/angular-simple-logger[.min].js'></script>
-    <script src='/path/to/angular-google-maps[.min].js'></script>
+    <script src="app/js/angular-google-maps.js"></script>
+    <script src="app/js/log.js"></script>
+    <script src="app/js/lodash.js"></script>
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+
     </body>
 </html>

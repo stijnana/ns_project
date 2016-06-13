@@ -48,24 +48,14 @@
         });
 
 
+        vm.map = { center: { latitude: 51, longitude: 6 }, zoom: 6 };
 
 
 
 
-
-        angular.module('myApplicationModule', ['uiGmapgoogle-maps']).config(
-            ['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
-                GoogleMapApiProviders.configure({
-                    china: true
-                });
-            }]
-        );
-
-        angular.module('myApplicationModule', ['uiGmapgoogle-maps']);
-
-        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
     }
 
 
 })();
+
