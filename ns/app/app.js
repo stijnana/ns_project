@@ -4,7 +4,8 @@
     /* App Module */
     angular.module('md2App', [
         'controllers',
-        'ngAnimate'
+        'ngAnimate',
+        'uiGmapgoogle-maps'
     ]);
 
     angular.module('controllers', []);
