@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    var lang
 
     angular
         .module('controllers')
@@ -12,8 +13,11 @@
         vm.newStudent = {};
 
         vm.setStudent = function(currentStudent){
-            if(vm.currentStudent != currentStudent)
+            if(vm.currentStudent != currentStudent) {
                 vm.currentStudent = currentStudent;
+                lang = (currentStudent.geoLong);
+                vm.map.center = {latitude: 50, longitude: lang};
+            }
             else
                 vm.currentStudent = undefined;
 
@@ -29,24 +33,23 @@
             vm.newStudent = {};
         };
 
+
         vm.allStudents = [
-            //{name:"Anton", age:18},
-            //{name:"Joris", age:29},
-            //{name:"Cees", age:19},
-            //{name:"Ryan", age:18},
-            //{name:"Jesse", age:18},
-            //{name:"Idris", age:20},
-            //{name:"Donovan", age:18}
         ];
 
 
 
-        $http.get('data/trainstations.json').then(function(stations){
+        $http.get('data/trainstations.json').then(function(stations,lang){
             vm.allStudents = stations.data;
-            //console.log(allStudents.geoLat);
+            //console.table(stations.data);
+            //console.log(stations.data[1].geoLong);
             //console.log(allStudents.geoLong);
+            //console.log(vm.allStudents);
         });
 
+        //console.log(vm.allStudents);
+            vm.map = {center: {latitude: 51, longitude: 6}, zoom: 6};
+            console.log(lang)
 
         vm.map = { center: { latitude: 51, longitude: 6 }, zoom: 6 };
 
