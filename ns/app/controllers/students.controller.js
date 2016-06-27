@@ -1,6 +1,7 @@
 (function() {
     'use strict';
-    var lang
+    var lang;
+    var lat;
 
     angular
         .module('controllers')
@@ -16,7 +17,8 @@
             if(vm.currentStudent != currentStudent) {
                 vm.currentStudent = currentStudent;
                 lang = (currentStudent.geoLong);
-                vm.map.center = {latitude: 50, longitude: lang};
+                lat = (currentStudent.geoLat);
+                vm.map.center = {latitude: lat, longitude: lang};
             }
             else
                 vm.currentStudent = undefined;
@@ -48,10 +50,8 @@
         });
 
         //console.log(vm.allStudents);
-            vm.map = {center: {latitude: 51, longitude: 6}, zoom: 6};
-            console.log(lang)
 
-        vm.map = { center: { latitude: 51, longitude: 6 }, zoom: 6 };
+        vm.map = { center: { latitude: 51, longitude: 6 }, zoom: 15 };
 
 
 
