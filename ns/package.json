@@ -11,7 +11,7 @@
     "angular",
     "md2"
   ],
-  "author": "Berend Weij",
+  "author": "Stijn Olthof, Robin Wist",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.6",

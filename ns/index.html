@@ -21,28 +21,32 @@
         <!--</div>-->
 
 
-    <div class="studentsList" ng-controller="StudentsController as students">
+    <div class="trainList" ng-controller="TrainController as trains">
 
-        <!--<div class="newStudent">-->
-        <!--<input type="text" placeholder="naam" ng-model="students.newStudent.name">-->
-        <!--<input type="text" placeholder="leeftijd" ng-model="students.newStudent.age">-->
-        <!--<div class="newStudent-submit button" ng-click="students.createStudent()">toevoegen</div>-->
+        <ui-gmap-google-map center='trains.map.center' zoom='trains.map.zoom' ></ui-gmap-google-map>
+
+
+
+        <!--<div class="newTrain">-->
+        <!--<input type="text" placeholder="naam" ng-model="trains.newTrain.name">-->
+        <!--<input type="text" placeholder="leeftijd" ng-model="trains.newTrain.age">-->
+        <!--<div class="newTrain-submit button" ng-click="trains.createStudent()">toevoegen</div>-->
         <!--</div>-->
 
-        <div class="studentsList">
-            <div>Er zijn {{students.allStudents.length}} stations in deze array</div>
-            <input type="text" placeholder="Doorzoek de lijst" ng-model="students.searchQuery">
-            <div class="studentsList-row animatedCSS" ng-class="{active:students.currentStudent==currentStudent}" ng-click="students.setStudent(currentStudent)" ng-repeat="currentStudent in students.allStudents | filter:students.searchQuery | limitTo: 10  ">
-                {{currentStudent.name}}
+        <div class="trainList">
+            <div>Er zijn {{trains.allTrains.length}} stations in deze array</div>
+            <input type="text" placeholder="Doorzoek de lijst" ng-model="trains.searchQuery">
+            <div class="trainList-row animatedCSS" ng-class="{active:trains.currentTrain==currentTrain}" ng-click="trains.setTrain(currentTrain)" ng-repeat="currentTrain in trains.allTrains | filter:trains.searchQuery | limitTo: 10  ">
+                {{currentTrain.name}}
             </div>
         </div>
 
-        <div class="studentDetails animatedCSS" ng-if="students.currentStudent">
-            <div>De geselecteerde stations is: {{students.currentStudent.name}}</div>
-            <div>De station code is: {{students.currentStudent.code}}</div>
+        <br>
+        <div class="studentDetails animatedCSS" ng-if="trains.currentTrain">
+            <div>De geselecteerde stations is: {{trains.currentTrain.name}}</div>
+            <div>De station code is: {{trains.currentTrain.code}}</div>
         </div>
 
-        <ui-gmap-google-map center='students.map.center' zoom='students.map.zoom'></ui-gmap-google-map>
 
     </div>
 
@@ -52,7 +56,8 @@
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-animate/angular-animate.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/controllers/students.controller.js"></script>
+    <script src="app/services/trains.service.js"></script>
+    <script src="app/controllers/trains.controller.js"></script>
     <script src="app/js/angular-google-maps.js"></script>
     <script src="app/js/log.js"></script>
     <script src="app/js/lodash.js"></script>

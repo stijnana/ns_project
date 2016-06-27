@@ -1,33 +1,34 @@
-input, .studentsList-row {
+input, .trainList-row {
   width:400px;
   padding:5px;
   box-sizing: border-box;
 }
 
-.studentsList {
+.trainList {
   margin: 10px 0px;
   display: inline-block;
+  text-align: center;
 }
 
-.studentsList-row {
+.trainList-row {
   color:black;
   background: lightgray;
   border-bottom: 1px dashed white;
   width: 500px;
 }
 
-.studentsList-row.active {
+.trainList-row.active {
   color:orange;
   margin-left: 10px;
 }
 
-.newStudent {
+.newTrain {
   margin:10px 0px;
   border:1px solid black;
   padding: 5px;
 }
 
-.newStudent-submit {
+.newTrain-submit {
   padding:5px;
   background: black;
   color: white;
@@ -78,4 +79,10 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container {
+  height: 400px;
+}
+
+.google_map{
+  display: inline-block;
+}
