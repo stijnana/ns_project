@@ -5,11 +5,12 @@
     angular.module('md2App', [
         'controllers',
         'ngAnimate',
+        'services',
         'uiGmapgoogle-maps'
     ]);
 
     angular.module('controllers', []);
-
+    angular.module('services', []);
 
 
 })();

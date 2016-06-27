@@ -23,6 +23,10 @@
 
     <div class="trainList" ng-controller="TrainController as trains">
 
+        <ui-gmap-google-map center='trains.map.center' zoom='trains.map.zoom' ></ui-gmap-google-map>
+
+
+
         <!--<div class="newTrain">-->
         <!--<input type="text" placeholder="naam" ng-model="trains.newTrain.name">-->
         <!--<input type="text" placeholder="leeftijd" ng-model="trains.newTrain.age">-->
@@ -32,17 +36,17 @@
         <div class="trainList">
             <div>Er zijn {{trains.allTrains.length}} stations in deze array</div>
             <input type="text" placeholder="Doorzoek de lijst" ng-model="trains.searchQuery">
-            <div class="trainList-row animatedCSS" ng-class="{active:trains.currentTrain==currentTrain}" ng-click="trains.setStudent(currentTrain)" ng-repeat="currentTrain in trains.allTrains | filter:trains.searchQuery | limitTo: 10  ">
+            <div class="trainList-row animatedCSS" ng-class="{active:trains.currentTrain==currentTrain}" ng-click="trains.setTrain(currentTrain)" ng-repeat="currentTrain in trains.allTrains | filter:trains.searchQuery | limitTo: 10  ">
                 {{currentTrain.name}}
             </div>
         </div>
 
+        <br>
         <div class="studentDetails animatedCSS" ng-if="trains.currentTrain">
             <div>De geselecteerde stations is: {{trains.currentTrain.name}}</div>
             <div>De station code is: {{trains.currentTrain.code}}</div>
         </div>
 
-        <ui-gmap-google-map center='trains.map.center' zoom='trains.map.zoom'></ui-gmap-google-map>
 
     </div>
 
@@ -52,6 +56,7 @@
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-animate/angular-animate.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/services/trains.service.js"></script>
     <script src="app/controllers/trains.controller.js"></script>
     <script src="app/js/angular-google-maps.js"></script>
     <script src="app/js/log.js"></script>

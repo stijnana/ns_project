@@ -1,12 +1,10 @@
 (function() {
     'use strict';
-    var long
-    var lat
     angular
         .module('controllers')
         .controller('TrainController', TrainController);
 
-    function TrainController($http) {
+    function TrainController(TrainService) {
 
         var vm = this;
 
@@ -15,38 +13,26 @@
         vm.setTrain = function(currentTrain){
             if(vm.currentTrain != currentTrain) {
                 vm.currentTrain = currentTrain;
-                long = (currentTrain.geoLong);
-                lat = (currentTrain.geoLat);
-                vm.map.center = {latitude: lat, longitude: long};
+                vm.map.center = {latitude: currentTrain.geoLat, longitude: currentTrain.geoLong};
+                vm.map.zoom=15;
             }
-            else
+            else {
                 vm.currentTrain = undefined;
+                vm.centerMap();
+            }
 
         };
 
-        //vm.createStudent = function(){
-        //    vm.allTrains.push(
-        //        {
-        //            name: vm.newTrain.name,
-        //            age: vm.newTrain.age
-        //        });
-        //
-        //    vm.newTrain = {};
-        //};
 
+        vm.allTrains = TrainService.allTrains;
 
-        vm.allTrains = [
-        ];
+        vm.centerMap = function(){
+            vm.map = {center: {latitude: 52, longitude: 5.5}, zoom: 7};
+        };
+        vm.centerMap();
 
 
 
-        $http.get('data/trainstations.json').then(function(stations,lang){
-            vm.allTrains = stations.data;
-        });
-
-
-
-        vm.map = {center: {latitude: 51, longitude: 6}, zoom: 15};
 
     }
 
