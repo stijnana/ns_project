@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-        <title>Voorbeeld Mediacollege</title>
+        <title>Reisplanner</title>
         <link rel="stylesheet" href="style/css/default.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     </head>
@@ -32,19 +32,20 @@
         <!--<input type="text" placeholder="leeftijd" ng-model="trains.newTrain.age">-->
         <!--<div class="newTrain-submit button" ng-click="trains.createStudent()">toevoegen</div>-->
         <!--</div>-->
+        <div id="hoeveel">U kunt kiezen uit {{trains.allTrains.length}} stations</div>
+        <div class="stationsList">
 
-        <div class="trainList">
-            <div>Er zijn {{trains.allTrains.length}} stations in deze array</div>
-            <input type="text" placeholder="Doorzoek de lijst" ng-model="trains.searchQuery">
+            <input type="text" placeholder="Doorzoek de lijst" ng-model="trains.searchQuery" style="margin-right: 85px">
             <div class="trainList-row animatedCSS" ng-class="{active:trains.currentTrain==currentTrain}" ng-click="trains.setTrain(currentTrain)" ng-repeat="currentTrain in trains.allTrains | filter:trains.searchQuery | limitTo: 10  ">
                 {{currentTrain.name}}
             </div>
-        </div>
 
-        <br>
-        <div class="studentDetails animatedCSS" ng-if="trains.currentTrain">
-            <div>De geselecteerde stations is: {{trains.currentTrain.name}}</div>
-            <div>De station code is: {{trains.currentTrain.code}}</div>
+
+            <br>
+            <div class="studentDetails animatedCSS" ng-if="trains.currentTrain">
+                <div>Het door u geselecteerde station is: {{trains.currentTrain.name}}</div>
+                <div>De station code is: {{trains.currentTrain.code}}</div>
+            </div>
         </div>
 
 

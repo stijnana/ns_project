@@ -1,25 +1,44 @@
+input {
+  margin-bottom: 5px;
+}
+
 input, .trainList-row {
-  width:400px;
+  width:501px;
   padding:5px;
   box-sizing: border-box;
 }
 
 .trainList {
+  padding-left: 3.2in;
   margin: 10px 0px;
   display: inline-block;
   text-align: center;
 }
 
+.stationsList{
+  padding-left: 5in;
+}
+
+#hoeveel {
+  /*text-align: center;*/
+  padding-left: 4.15in;
+}
+
 .trainList-row {
   color:black;
-  background: lightgray;
+  background-color: lightgray;
   border-bottom: 1px dashed white;
   width: 500px;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 .trainList-row.active {
   color:orange;
-  margin-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px dashed black;
 }
 
 .newTrain {
@@ -45,12 +64,12 @@ body {
 }
 
 .studentDetails {
-  width: 500px;
+  width: 489px;
   height:100px;
   border:1px solid black;
   padding:5px;
   display: inline-block;
-  float: right;
+  float: left;
 }
 
 .studentDetails.ng-enter,
@@ -59,7 +78,6 @@ body {
   -ms-transform: scale(0.95); /* IE 9 */
   -webkit-transform: scale(0.95); /* Safari */
   transform: scale(0.95);
-  posi: rotateY(180deg);
 }
 
 .studentDetails.ng-leave,
@@ -68,7 +86,7 @@ body {
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari */
   transform: scale(1);
-  transform: rotateY(180deg);
+  /*transform: rotateY(180deg);*/
 }
 
 .animatedCSS {
@@ -80,9 +98,12 @@ body {
 }
 
 .angular-google-map-container {
-  height: 400px;
+  height: 500px;
+  width: 7in;
+  margin-left: 4in;
 }
 
 .google_map{
   display: inline-block;
+
 }
